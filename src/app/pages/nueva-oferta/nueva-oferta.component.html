@@ -1,0 +1,48 @@
+<p>nueva-oferta works!</p>
+<div class="container">
+    <h1>Crear nueva oferta</h1>
+  <form id="ofertaForm" role="form" [formGroup]="formularioOferta" (ngSubmit) = "sendForm();">
+    <div class="row"> 
+      <div class="form-group col-md-6">
+          <label for="inputTitulo">Titulo *</label>
+          <input type="text" class="form-control" id="inputTitulo" placeholder="Titulo" formControlName="titulo" >
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputDescripcion">Descripcion *</label>
+          <input type="text" class="form-control" id="inputDescripcion" placeholder="Descripcion" formControlName="descripcion">
+        </div>
+    </div> 
+
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="inputEmpresa">Empresa *</label>
+        <input type="text" class="form-control" id="inputEmpresa" formControlName="empresa">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputSalario">Salario *</label>
+        <input type="text" class="form-control" id="inputSalario" formControlName="salario">
+      </div>
+    </div> 
+
+
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for="inputCiudad"> Ciudad *</label>
+        <input type="text" class="form-control" id="inputCiudad" formControlName="ciudad">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail">Email *</label>
+        <input type="email" class="form-control" id="inputEmail" formControlName="email">
+      </div>
+    </div>
+
+    
+    <div class="form-group col-md-12">
+      <button type="submit"  *ngIf="formularioOferta.valid" class="btn btn-dark btn-lg btn-block">Añadir oferta</button>
+      <div class="alert alert-info message" *ngIf="!formularioOferta.valid">
+        Podrá añadir la oferta cuando todos los campos estén correctamente rellenados.
+      </div>
+      <button type="button" (click)="volver();" class="btn btn-dark btn-lg btn-block">Volver al Listado</button>
+    </div>
+  </form>
+</div>

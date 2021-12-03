@@ -1,0 +1,20 @@
+<div class="row top">
+  <div class=" col-md-8">
+    <h1>Oferta {{ response.titulo }}</h1>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="card classCard bg-light" style="width: 70rem;" >
+      <div class="card-body" >
+        <h2 class="card-title">{{ response.titulo}}</h2>
+        <h4 class="card-text"> {{ response.descripcion }} </h4>  
+      </div>
+  </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ response.empresa}}</li>
+      <li class="list-group-item">{{ response.salario }}</li>
+      <li class="list-group-item">{{ response.ciudad }}</li>
+      <li class="list-group-item">{{ response.email }}</li>
+    </ul>
+</div>

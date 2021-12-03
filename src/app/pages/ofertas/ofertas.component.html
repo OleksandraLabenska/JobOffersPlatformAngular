@@ -1,0 +1,35 @@
+<div class="row top">
+  <div class=" col-md-8">
+    <h1>Listado de ofertas(admin)</h1>
+  </div>
+  <div class="col-md-2">
+    <button type="button" (click)="this.goToNuevaOferta();" class="btn btn-dark btn-lg buttonCrearOferta">Crear Oferta</button>
+  </div>
+  <div class="col-md-2">
+    <button type="button" *ngIf="hayUsuario();" (click)="this.logout();" (click)="this.goToLogin();" class="btn btn-dark btn-lg buttonCrearOferta">Logout</button>
+  </div>
+</div>
+<hr>
+<div class="container" >
+  <table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Detalle</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of this.arrayListadoOfertas">
+      <tr>
+        <td class="titulo">{{ item.titulo }}</td>
+        <td><button (click)="this.goToOferta(item.id)" class="buttonVer btn btn-light">Ver</button></td>
+        <td><button class=" buttonEliminar btn btn-outline-dark" (click) = "this.eliminarOferta(item.id);">Eliminar Oferta</button></td>
+      </tr>
+    </tbody>
+  </table>   
+</div>
+
+
+
+
+
+

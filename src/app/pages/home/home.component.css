@@ -1,0 +1,49 @@
+*{
+    color: aliceblue;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: black;
+}
+
+hr{
+    color: black;
+    height: 3px;
+}
+
+.buttonLogin{
+    height: 75px;
+    width: 275px;
+    font-size: 1.5rem;
+}
+
+.buttonVer{
+    color: black;
+    height: 40px;
+    width: 75px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.container{
+    margin: 60px auto;
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 100px;
+}
+.classCard{
+    margin: 20px 20px;
+}
+
+.top{
+    margin: 20px auto;
+}
+
+.titulo{
+    font-size: 1.3rem;
+}
+
+th{
+    font-size: 1.3rem;
+}
+

@@ -1,0 +1,33 @@
+<div class="row top">
+  <div class=" col-md-8">
+    <h1>Listado de ofertas</h1>
+  </div>
+  <div class="col-md-4">
+    <button type="button" (click) = "this.goToLogin();"  class="buttonLogin btn btn-dark btn-lg">Login</button>
+  </div>
+</div>
+<hr>
+<div class="container" >
+  <table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Detalle</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of this.arrayListadoOfertas">
+      <tr>
+        <td class="titulo">{{ item.titulo }}</td>
+        <td><button (click)="this.goToOferta(item.id)" class="buttonVer btn btn-light">Ver</button></td>
+      </tr>
+    </tbody>
+  </table>     
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{  
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 100px;
+    margin: 150px auto;
+}
+
+h1{
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    
+}
+
+label{
+    color: white;
+}
+
+input, .form-check-label{
+    margin: 10px auto;
+}
+
+button{
+    width: 100%;
+    border-color: aliceblue;
+    margin: 20px auto 10px;
+}
+
+.message{
+    background-color: grey;
+    color: black;
+    border-style: none;
+    margin: 10px auto;
+}
